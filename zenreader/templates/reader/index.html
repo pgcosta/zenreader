@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Simple web page</title>
+		{% load staticfiles %}
+		<link rel="stylesheet" type="text/css" href="{% static 'reader/style.css'%}" />
+	<head>
+
+	<body>
+		<!-- <div>		ola</div> -->
+		<div class="cards-row">
+		{% if tweetList %}
+		{% for tweet in tweetList %}
+			<div class="card">
+			<table class="card-table">
+			<tr>
+				<td class="card-row-user-name">
+					<div class="user-name">{{ tweet.name }}</div>
+				</td>
+				
+				<td class="card-row-title">
+					<div class="title">Title 1</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class="profile-picture" style="background-image: url('pittchanel_01.jpg')"></div>
+				</td>
+				
+				<td class="card-row-message">
+					<div class="message"> {{ tweet.message }} </div>
+				</td>
+			</tr>
+			</table>
+			</div>
+		{% endfor %}
+		{% else %}
+			<p>No tweets are available.</p>
+		{% endif %}
+		</div>
+	</body>
+</html>

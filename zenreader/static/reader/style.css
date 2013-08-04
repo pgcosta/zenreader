@@ -1,0 +1,62 @@
+body {
+	background-image:url('backgroung.jpg');	
+}
+
+.cards-row {
+	margin-top: 10%;
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+.user-name {
+	font-family: 'Futura', Arial, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	padding-left: 1%;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	max-width: 1.3in;
+	overflow: hidden;	
+}
+
+.title {
+	font-family: 'Futura', Arial, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: inherit;
+	}
+
+.card-row-title {
+	padding-left: 15px;
+	}
+	
+.card-row-message {
+	padding-left: 15px;
+	}
+
+.card {
+	background-color: white;
+	width: auto;
+	height: auto;
+	border-top: 3px solid #000000;
+	border-right: 3px solid #000000;
+	border-left: 3px solid #000000;
+	border-radius: 2em;
+	box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+	padding: 0.3em;
+	margin-top: 3px;
+	}
+
+.profile-picture {
+	display: inline-block;
+	width: 90px;
+   height: 90px;
+   margin: 0em auto;
+   background-size: cover;
+   background-position: center center;
+   -webkit-border-radius: 99em;
+   -moz-border-radius: 99em;
+   border-radius: 99em;
+   border: 5px solid #37229F;
+   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+	}
